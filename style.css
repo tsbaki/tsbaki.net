@@ -1,0 +1,92 @@
+body {
+    font-family: Times New Roman;
+}
+
+main {
+    padding-left: 38%;
+    padding-right: 38%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+
+nav > h1, h2, h3 {
+    text-align: center;
+    width: 100%;
+}
+
+
+.date {
+    border-bottom: 2px solid black;
+    text-align: left;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+#nav {
+    text-align:center;
+    margin-bottom: 20;
+}
+
+#nav li {
+    display:inline;
+    border: 2px black solid;
+    padding: 10 0;
+}
+#nav a {
+    font-size: 20px;
+    text-decoration:none; 
+    padding:0 40; /* variable width */
+    color: black;
+}
+
+#nav li:hover {
+    background-color: cyan;
+}
+
+
+table {
+    margin: 10;
+}
+
+td {
+    padding: 10;
+    border: 1px black solid;
+}
+
+td:hover {
+    background-color: cyan;
+}
+
+th {
+    float: left;
+}
+.contact-container {
+    width: 100%;
+}
+#me-image {
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+
+.tech-list {
+    font-size: 19px; 
+}
+
+.tech-list > li {
+    padding: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.resume-item > h2, h4, li {
+    text-align: justify;
+}
+
