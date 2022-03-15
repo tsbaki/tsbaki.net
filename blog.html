@@ -19,7 +19,41 @@
 
 <main>
     <article>
-        <h2 class="date">February 10th, 2022</h2>
+        <h2 class="date">Windows boot entry missing from Dual-Boot GRUB menu | March 15th, 2022</h2>
+        <p>A recent GRUB update may have removed the windows menu entry from 
+        the GRUB menu screen.</p>
+        <p>This is the result of a new security measure by not including the
+        <code>GRUB_DISABLE_OS_PROBER</code> in the <code>/etc/default/grub</code>
+        file by default.
+        <p>Add the following flag to the grub file mentioned above: </br>
+        <code>GRUB_DISABLE_OS_PROBER=false</code>
+        <p>Then running: </br>
+        <code>grub-mkconfig -o /boot/grub/grub.cfg</code> </br>
+        should generate the updated GRUB configuration file which will now
+        include the windows boot option in the GRUB boot screen.</p>
+    </article>
+    <article>
+        <h2 class="date">Bitcoin & Crypto in general | March 9th, 2022</h2>
+        <p>I really don't understand the hype behind bitcoin and how
+        everyone is stating that this cryptocurrency has come to stay. I believe that is untrue - or so I hope.</p>
+        <p>Using bitcoin as money would be terribly unpractical and here's why (IMO):<p>
+        <ul>
+            <li>A node in the blockchain has to validate whatever a block has and update the whole blockchain.
+                This would cause an ordinary transaction (like paying groceries at the store) 
+                to take an incredible amount of time; very inefficient. With a normal bank and currency, this takes seconds.</li>
+            <li>If you do end up buying anything with cryptocurrency and somehow you find that you're unhappy
+                with the item you just bought, i.e. it's damaged, you can wave goodbye to your bitcoin because, by nature,
+                this is an irreversible action in the blockchain.</li>
+            <li>Crypto is praised for its annonimity however I'm confident that most people use platforms like coinbase or
+                binance to hold their private keys. Well, these companies can now tie your identity to these private keys...</li>
+            <li>People are not interested in the cryptocurrency but rather on how they can profit (in non-digital currency) from buying/selling it.</li>
+        </ul>
+        <p>Crypto in general has a terrifying carbon footprint. In fact, bitcoin alone, takes up more electricity and the 
+        <a target="_blank" href="https://ccaf.io/cbeci/index/comparisons">whole of the Ukraine</a>.</p>
+        <p>Oh and look, you can <a target="_blank" href="https://www.hostmine.uk/mining-options/rent">rent computing power to mine crypto</a>. So much for "decentralization"...</p>
+    </article>
+    <article>
+        <h2 class="date">wmenu | February 10th, 2022</h2>
         <p>Checkout this small project I made for a tiny application
         launcher on windows: <a href="https://github.com/tsbaki/wmenu">wmenu</a>.
         It is pretty much a clone of <a href="https://tools.suckless.org/dmenu/">suckless' dmenu</a> 
